@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('merchandises', function (Blueprint $table) {
             $table->id();
-            
+            $table->string('name');
+            $table->double('price');
+            $table->integer('stock');
             $table->timestamps();
         });
     }
